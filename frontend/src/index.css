@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap");
+@import "tailwindcss";
+
+@layer base {
+  /* Base font for all text */
+  html {
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  /* Heading styles with Satoshi font */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .text-2xl,
+  .text-xl,
+  .text-lg,
+  .font-bold,
+  .font-semibold,
+  [class*="heading"],
+  [class*="title"] {
+    font-family: "Satoshi", system-ui, sans-serif;
+  }
+
+  /* List item styling */
+  ul li,
+  ol li {
+    font-weight: 400; /* Default weight for list items - adjust as needed */
+  }
+
+  /* Specific list item classes */
+  .list-light li {
+    font-weight: 300;
+  }
+
+  .list-normal li {
+    font-weight: 400;
+  }
+
+  .list-medium li {
+    font-weight: 500;
+  }
+
+  .list-semibold li {
+    font-weight: 600;
+  }
+}
+
+body {
+  background-color: #f4f4f7;
+}
+
+/* Custom utility classes for explicit font control */
+.font-satoshi {
+  font-family: "Satoshi", system-ui, sans-serif;
+}
+
+.font-inter {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* Custom list item font weight classes */
+.bullet-light {
+  font-weight: 300;
+}
+
+.bullet-normal {
+  font-weight: 400;
+}
+
+.bullet-medium {
+  font-weight: 500;
+}
+
+.bullet-semibold {
+  font-weight: 600;
+}
+
+.bullet-bold {
+  font-weight: 700;
+}

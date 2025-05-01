@@ -1,0 +1,21 @@
+{
+  "name": "metrobank-service",
+  "version": "1.0.0",
+  "description": "Metrobank microservice for thesis project",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "metrobank",
+    "banking",
+    "microservice"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "metrobank-service": "file:"
+  }
+}
